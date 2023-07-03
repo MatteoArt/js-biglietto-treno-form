@@ -1,22 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    <div>
-        <label for="km_travel">Km da percorrere</label>
-        <input type="text" id="km_travel" name="travel">
+    <h1 class="title">Calcola il prezzo del tuo biglietto</h1>
+    <div class="container">
+        <div class="input-group">
+            <div>
+                <label for="name">Nome Cognome</label>
+                <input type="text" id="name" class="input-name input-form" name="pas" value="John Snow">
+            </div>
+            <div>
+                <label for="km_travel">Km da percorrere</label>
+                <input type="text" id="km_travel" class="input-form" name="travel" value="10">
+            </div>
+            <div>
+                <label for="user_age">Età del passeggero</label>
+                <input type="text" id="user_age" class="input-form" name="age" value="26">
+            </div>
+        </div>
+        <div class="btn-container">
+            <button type="button" class="btn btn-click">Genera</button>
+            <button type="button" class="btn btn-reset">Annulla</button>
+        </div>
+
     </div>
-    <div>
-        <label for="user_age">Età del passeggero</label>
-        <input type="text" id="user_age" name="age">
+    <div id="wrapper">
+        <h1 class="title" id="ticket-title">Il tuo biglietto</h1>
+        <div class="ticket">
+            <h3 class="detail">dettaglio passegeri</h3>
+            <div class="show-details">
+                <div class="item first-item">
+                    <h3 class="detail">Nome passegero</h3>
+                    <div class="name-pas name-semibold"></div>
+                </div>
+                <div class="item">
+                    <div class="caption">Offerta</div>
+                    <div id="discount"></div>
+                </div>
+                <div class="item">
+                    <div class="caption">Carrozza</div>
+                    <div id="carrozza"></div>
+                </div>
+                <div class="item">
+                    <div class="caption">Codice CP</div>
+                    <div class="cp-code semibold-output"></div>
+                </div>
+                <div class="item">
+                    <div class="caption">Costo biglietto</div>
+                    <div class="price semibold-output"></div>
+                </div>
+            </div>
+        </div>
     </div>
-    <button type="button" class="btn-click">Clicca</button>
+
 
 
     <script src="js/main.js"></script>
 </body>
+
 </html>
