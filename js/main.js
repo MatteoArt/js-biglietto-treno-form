@@ -63,7 +63,7 @@ btnClick.addEventListener("click", function () {
     priceElement.innerHTML = `${finalPrice}€`;
 })
 
-//al click sul bottone annula svuoto i campi input 
+//al click sul bottone 'annulla' resetto i campi input e faccio sparire il biglietto
 btnReset.addEventListener("click", function () {
     nameElement.value = "";
     kmInputElement.value = "";

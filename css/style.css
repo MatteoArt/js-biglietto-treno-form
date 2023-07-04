@@ -59,6 +59,8 @@ label {
     border-color: #B91450;
     border-radius: 6px;
     padding: 7px;
+    text-align: center;
+    font-size: large;
 }
 .ticket {
     min-height: 100px;
