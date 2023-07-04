@@ -23,6 +23,8 @@ btnClick.addEventListener("click", function () {
     let nomePassegero = nameElement.value;
     let kilometres = kmInputElement.value;
     let age = userAgeElement.value;
+    age = parseInt(age);
+    //console.log(age);
     
     wrapperElement.style.display = "block";
 
